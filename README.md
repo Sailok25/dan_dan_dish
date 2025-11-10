@@ -42,5 +42,6 @@ El objetivo es sobrevivir más que el oponente usando estrategia y timing.
 ## 💻 Tecnologías utilizadas
 - **HTML5** — interfaz y estructura  
 - **CSS3** — estilos visuales  
-- **JavaScript (Vanilla)** — lógica del juego  
+- **JavaScript** — lógica del juego  
 - **Node.js + Socket.IO** — para modo multijugador online
+
