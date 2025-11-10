@@ -7,26 +7,55 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Dan Dan Dish</h1>
-
-  <div id="status">
-    <p>Jugador: <span id="balas-jugador">0</span> balas</p>
-    <p>CPU: <span id="balas-cpu">0</span> balas</p>
+  <!-- Menú principal -->
+  <div id="menu-principal" class="pantalla">
+    <h1>DAN DAN DISH</h1>
+    <button id="btn-nueva-partida">Nueva partida</button>
+    <button id="btn-como-jugar">Cómo jugar</button>
+    <p>Versión 1.2.1</p>
   </div>
 
-  <div id="btn-opciones">
-    <button id="recargar">
-      <img src="img/bala.png" alt="Recarga">
-    </button>
-    <button id="disparar">
-      <img src="img/pistola.webp" alt="Disparar">
-    </button>
-    <button id="escudo">
-      <img src="img/escudo.png" alt="Escudo">
-    </button>
+  <!-- Pantalla de instrucciones -->
+  <div id="como-jugar" class="pantalla" style="display: none;">
+    <h2>Cómo jugar</h2>
+    <div class="instrucciones">
+      <p><strong>Objetivo:</strong> Elimina a tu oponente antes de que te elimine a ti.</p>
+      <p><strong>Acciones:</strong></p>
+      <ul>
+        <li><img src="img/bala.png" alt="Recargar" width="30"> <strong>Recargar:</strong> Añade una bala a tu cargador.</li>
+        <li><img src="img/pistola.webp" alt="Disparar" width="30"> <strong>Disparar:</strong> Usas una bala para atacar a tu oponente.</li>
+        <li><img src="img/escudo.png" alt="Escudo" width="30"> <strong>Escudo:</strong> Bloquea un disparo.</li>
+      </ul>
+      <p><strong>Reglas:</strong></p>
+      <table>
+        <tr><th>Jugador</th><th>Oponente</th><th>Resultado</th></tr>
+        <tr><td>Recargar</td><td>Disparar</td><td>Pierdes</td></tr>
+        <tr><td>Disparar</td><td>Recargar</td><td>Ganas</td></tr>
+        <tr><td>Disparar</td><td>Disparar</td><td>Empate</td></tr>
+        <tr><td>Escudo</td><td>Disparar</td><td>Bloqueas el disparo</td></tr>
+      </table>
+    </div>
+    <button id="btn-volver-menu">Volver al menú</button>
   </div>
 
-  <div id="resultado-ronda"></div>
+  <!-- Pantalla del juego -->
+  <div id="pantalla-juego" class="pantalla" style="display: none;">
+    <h1>Dan Dan Dish</h1>
+    <div id="status">
+      <p>Jugador: <span id="balas-jugador">0</span> balas</p>
+      <p>CPU: <span id="balas-cpu">0</span> balas</p>
+    </div>
+    <div id="temporizador">
+      <div id="barra-tiempo"></div>
+    </div>
+    <div id="btn-opciones">
+      <button id="recargar"><img src="img/bala.png" alt="Recarga"></button>
+      <button id="disparar"><img src="img/pistola.webp" alt="Disparar"></button>
+      <button id="escudo"><img src="img/escudo.png" alt="Escudo"></button>
+    </div>
+    <div id="avisos-jugador"></div>
+    <button id="btn-reiniciar" style="display: none;">Reiniciar</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
