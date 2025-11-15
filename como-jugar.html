@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo Jugar - Dan Dan Dish</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="como-jugar" class="pantalla">
+    <h2>Cómo jugar</h2>
+    <div class="instrucciones">
+      <p><strong>Objetivo:</strong> Elimina a tu oponente antes de que te elimine a ti.</p>
+      <p><strong>Acciones:</strong></p>
+      <ul>
+        <li><img src="img/bala.png" alt="Recargar" width="30"> <strong>Recargar:</strong> Añade una bala a tu cargador.</li>
+        <li><img src="img/pistola.webp" alt="Disparar" width="30"> <strong>Disparar:</strong> Usa una bala para atacar.</li>
+        <li><img src="img/escudo.png" alt="Escudo" width="30"> <strong>Escudo:</strong> Bloquea un disparo.</li>
+      </ul>
+    </div>
+    <button id="btn-volver-menu">Volver al menú principal</button>
+  </div>
+
+  <script>
+    document.getElementById('btn-volver-menu').addEventListener('click', () => {
+      window.location.href = 'menu.html';
+    });
+  </script>
+</body>
+</html>
