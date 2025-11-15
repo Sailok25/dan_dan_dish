@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem 4rem;
+}
+
+/* HEADER */
+.header h1 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.red {
+    color: #e50914;
+}
+
+.white {
+    color: #fff;
+    font-style: italic;
+}
+
+.credits-title {
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: right;
+    margin-top: -1rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* GRID DE CRÉDITOS */
+.credits-grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #e50914;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #f1f1f1;
+    text-transform: uppercase;
+}
+
+/* LOGO */
+.logo img {
+    width: 320px;
+    opacity: 0.75;
+}
+
+/* BOTÓN DE VOLVER */
+.back-btn-container {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.back-btn {
+    background: transparent;
+    border: 2px solid #e50914;
+    padding: 0.8rem 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+.back-btn:hover {
+    background: #e50914;
+    box-shadow: 0 0 15px #e50914;
+}

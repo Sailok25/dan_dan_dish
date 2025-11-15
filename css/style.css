@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* CONTENEDOR AHORA OCUPA TODA LA PANTALLA */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+/* COLUMNA IZQUIERDA */
+.menu-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  text-align: left;
+  padding-left: 150px;
+
+  /* Permite que el texto crezca según pantalla */
+  transform: scale(1.1);
+}
+
+/* COLUMNA DERECHA */
+.menu-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGEN OCUPA MÁS ALTURA */
+.menu-right img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  user-select: none;
+}
+
+/* TÍTULO MÁS GRANDE */
+h1 {
+  font-size: 5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.red {
+  color: #e50914;
+}
+
+.white {
+  color: #f1f1f1;
+  font-style: italic;
+}
+
+/* SUBTÍTULO MÁS GRANDE PARA LLENAR ESPACIO */
+.subtitle {
+  font-size: 1.4rem;
+  color: #aaa;
+  margin-bottom: 4rem;
+}
+
+/* BOTONES */
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: left;
+  width: 300px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;  
+}
+
+.btn:hover{
+  border-color: #e50914;
+  box-shadow: 0 0 15px #e50914;
+}
+.btn.active {
+  background-color: #e50914;
+  border-color: #e50914;
+  box-shadow: 0 0 15px #e50914;
+}
+
+/* VERSIÓN */
+.version {
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #666;
+}
