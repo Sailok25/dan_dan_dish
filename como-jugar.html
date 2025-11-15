@@ -4,27 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cómo Jugar - Dan Dan Dish</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div id="como-jugar" class="pantalla">
-    <h2>Cómo jugar</h2>
-    <div class="instrucciones">
-      <p><strong>Objetivo:</strong> Elimina a tu oponente antes de que te elimine a ti.</p>
-      <p><strong>Acciones:</strong></p>
-      <ul>
-        <li><img src="img/bala.png" alt="Recargar" width="30"> <strong>Recargar:</strong> Añade una bala a tu cargador.</li>
-        <li><img src="img/pistola.webp" alt="Disparar" width="30"> <strong>Disparar:</strong> Usa una bala para atacar.</li>
-        <li><img src="img/escudo.png" alt="Escudo" width="30"> <strong>Escudo:</strong> Bloquea un disparo.</li>
-      </ul>
-    </div>
-    <button id="btn-volver-menu">Volver al menú principal</button>
-  </div>
 
-  <script>
-    document.getElementById('btn-volver-menu').addEventListener('click', () => {
-      window.location.href = 'menu.html';
-    });
-  </script>
+  <div class="pantalla-container">
+
+    <!-- Header con título -->
+    <header class="header">
+      <h1><span class="red">Dan Dan</span> <span class="white">Dish</span></h1>
+      <h2 class="pantalla-title">Cómo jugar</h2>
+    </header>
+
+    <!-- Instrucciones -->
+    <section class="instrucciones-box">
+      <p><strong>Objetivo:</strong> Elimina a tu oponente antes de que te elimine a ti.</p>
+
+      <p><strong>Acciones:</strong></p>
+      <ul class="acciones-list">
+        <li>
+          <img src="assets/img/btn-options/bala.png" alt="Recargar" width="30">
+          <strong>Recargar:</strong> Añade una bala a tu cargador.
+        </li>
+        <li>
+          <img src="assets/img/btn-options/pistola.webp" alt="Disparar" width="30">
+          <strong>Disparar:</strong> Usa una bala para atacar.
+        </li>
+        <li>
+          <img src="assets/img/btn-options/escudo.png" alt="Escudo" width="30">
+          <strong>Escudo:</strong> Bloquea un disparo.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Botón volver -->
+        <div class="back-btn-container">
+            <a href="index.html" class="back-btn">Back</a>
+        </div>
+
+  </div>
 </body>
 </html>
