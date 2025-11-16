@@ -56,6 +56,7 @@ Los jugadores deben decidir entre **recargar**, **disparar** o **protegerse**, a
 ## 📸 Screenshots
 <p align="center">
   <img src="assets/img/start-page.png" alt="Screenshot 1" width="400"/>
-  <img src="assets/img/pvp-match.png" alt="Screenshot 2" width="400"/>
-  <img src="assets/img/pvcpu-match.png" alt="Screenshot 3" width="400"/>
+  <!-- <img src="assets/img/pvp-match.png" alt="Screenshot 2" width="400"/>
+  <img src="assets/img/pvcpu-match.png" alt="Screenshot 3" width="400"/> -->
 </p>
+
