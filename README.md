@@ -2,7 +2,7 @@
   <img src="assets/img/ddd_logo.svg" alt="DanDanDish Logo" width="200"/>
 </p>
 <p align="center">
-  <a href="https://sailok25.github.io/dan_dan_dish/" 
+  <a href="https://sailok25.github.io/dan-dan-dish/" 
      style="background-color:#4CAF50;color:white;padding:12px 24px;text-align:center;text-decoration:none;display:inline-block;border-radius:8px;font-size:18px;">
     ¡Juega ahora!
   </a>
@@ -59,5 +59,6 @@ Los jugadores deben decidir entre **recargar**, **disparar** o **protegerse**, a
   <!-- <img src="assets/img/pvp-match.png" alt="Screenshot 2" width="400"/>
   <img src="assets/img/pvcpu-match.png" alt="Screenshot 3" width="400"/> -->
 </p>
+
 
 
